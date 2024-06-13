@@ -15,14 +15,15 @@
 #icon{
     width: 30px;
     cursor: pointer;
-
+    background: var(--primary-color);
 }
+
 nav ul{
     flex: 1;
     text-align: right;
 }
 
-.hero{
+body{
     height: 100vh;
     width: 100%;
     background: var(--primary-color);
@@ -30,6 +31,7 @@ nav ul{
     position: relative;
     
 }
+
 nav{
     width: 84%;
     margin: auto;
@@ -37,6 +39,12 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.head{
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--secondary-color);
+
 }
 .logo{
     width: 100px;
