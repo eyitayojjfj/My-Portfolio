@@ -8,18 +8,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+    <header class="point">
     <div class="hero">
         <nav>
             <h1 class="head">EYITAYO</h1>
             <ul>
                 <li><a href="">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
-                <li><a href="">PORTFOLIO</a></li>
-                <li><a href="">SERVICES</a></li>
-                <li><a href="">HIRE ME</a></li>
+                <!-- <li><a href="">PORTFOLIO</a></li>
+                <li><a href="">SERVICES</a></li> -->
+                <li><a href="hire.html">HIRE ME</a></li>
             </ul>
             <img src="3efc11be-0df3-4228-b9e5-77b4e01d97d0.jpg" id="icon">
         </nav>
+    </div>
+        <div>
         <div class="info">
             <h1>I'm <span>Eyitayo</span> Sulaimon</h1>
             <p>This is my official portforlio website to showcase all my works related to Front-End web<br>development and UI design</p>
@@ -30,14 +33,29 @@
         </div>
         <br><br><br>
         <div class="social-links">
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/eyitayo-sulaimon-69400b314/"><i class="fa-brands fa-linkedin"></i></a>
             <a href=""><i class="fa-brands fa-behance"></i></a>
-            <a href="https://github.com/eyitayojjfj"><i class="fa-brands fa-github"></i></a>
-            <br>
+            <a href="https://github.com/eyitayojjfj"><i class="fa-brands fa-github"></i></a> 
         </div>
         
        
     </div>
+    </header>
+    <br>
+    <footer class="footer">
+    <div class="stock">
+        <ul class="list">
+            <li><a href="about.html">About</a></li>
+            <li><a href="hire.html">Contact</a></li>
+            <li><a href="#">PrivacyPolicy</a></li>
+        </ul>
+        <br>
+            <i id="tenge" class="fa-solid fa-phone">+234 8124 769757</i>
+           <p><i id="tenge" class="fa-solid fa-envelope"></i>sulaimoneyitayo@gmail.com</p> 
+           <br>
+        <p class="copyright">© 2024 EYITAYO | ALL RIGHTS RESERVED</p>
+    </div>
+     </footer>
     <br>
    
 
@@ -48,9 +66,9 @@
      icon.onclick = function(){
         document.body.classList.toggle("dark-theme")
         if(document.body.classList.contains("dark-theme")){
-            icon.src = "Free Printable Sun Coloring Pages for Kids.jpg";
+            icon.src = "3efc11be-0df3-4228-b9e5-77b4e01d97d0.jpg";
         }else{
-            icon.src = "3efc11be-0df3-4228-b9e5-77b4e01d97d0.jpg"
+            icon.src = "Free Printable Sun Coloring Pages for Kids.jpg"
         }
      }
 

@@ -69,13 +69,14 @@ nav ul li a:hover{
     color: #ff4321;
 }
 .info{
-    margin-top: 70px;
+    margin-top: 110px;
+   
 }
 .info h1{
-    font-size: 50px;
+    font-size: 60px;
     color: var(--secondary-color);
-    margin-bottom: 20px;
     text-align: center;
+    margin-bottom: 10px;
 }
 span{
     color: #ff4321;
@@ -85,7 +86,6 @@ span{
     line-height: 22px;
     text-align: center;
     font-size: 20px;
-    padding-bottom: 30px;
 }
 .info a{
     background: var(--secondary-color);
@@ -96,17 +96,44 @@ span{
     margin: 30px 0;
     border-radius: 5px;
 }
-.sport h1{
-    font-size: 60px;
-    text-align: center;
-    padding-top: 50px;
-    color: var(--secondary-color);
+.info form{
+   max-width: 50em;
+   margin: 1rem auto;
+   text-align: center;
+   margin-bottom: 3em;
 }
-.pic1{
-    text-align: center;
+.info form .input-box{
+    display: flex;
     justify-content: center;
-    align-items: center;
-    margin-left: 550px;
+    flex-wrap: wrap;
+}
+.info form textarea{
+    width: 100%;
+    padding: 1.5em;
+    font-size: 18px;
+    color: black;
+    background: rgb(241, 241, 241);
+    border-radius: .8rem;
+    margin: 1rem 0;
+}
+.info form .input-box input{
+    width: 100%;
+    padding: 1.5em;
+    font-size: 18px;
+    color: black;
+    background: rgb(241, 241, 241);
+    border-radius: .8rem;
+    margin: 1rem 0;
+}
+.btn-1{
+    background: var(--secondary-color);
+    padding: 10px 18px;
+    text-decoration: none;
+    color: var(--primary-color);
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+    cursor: pointer;
 }
 .hero{
      background-color: rgba(0, 0, 139, 0.54);
@@ -140,6 +167,8 @@ span{
 
 </style>
 <body>
+    
+    
     <div class="hero">
         <nav>
             <h1 class="head">EYITAYO</h1>
@@ -148,68 +177,42 @@ span{
                 <li><a href="about.html">ABOUT</a></li>
                 <!-- <li><a href="">PORTFOLIO</a></li>
                 <li><a href="">SERVICES</a></li> -->
-                <li><a href="hire.html">HIRE ME</a></li>
+                <li><a href="">HIRE ME</a></li>
             </ul>
             <img src="3efc11be-0df3-4228-b9e5-77b4e01d97d0.jpg" id="icon">
         </nav>
-       </div>
-        <div>
-        <div class="sport">
-            <h1> <span>About</span> Me</h1>
-        </div>
+    </div>
     <div class="info">
-        <h1><u>CAREER OBJECTIVE</u></h1>
-        <p>A dedicated and highly motivated Front-End web developer seeking an <br> internship position to apply academic knowledge and gain practical experience <br> in front end development.</p>
-    
+      <h1><span>Contact</span> Me</h1>
+    <form action="#">
+    <div class="input-box">
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email">
     </div>
 
-    <div class="info">
-       <h1><u>SKILLS</u></h1>
-       <p>.  HTML   .  CSS   .  Javascript   .  REACT   .  JSX   . REDUX <br>
-        .  Responsive UI   .  State Management.   . CSS Preprocessors. <br>
-        .  Version Control/GIT   . Browser Developer Tools.   . Team Work. <br>
-        .  Soft-Skills.  . Willigness  To Learn.
-        </p>
+    <div class="input-box">
+        <input type="number" placeholder="Phone Number">
+        <input type="text" placeholder="Subject">
     </div>
+  <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+  <input type="submit" value="Send Message" class="btn-1" >
 
-    <div class="info">
-        <h1><u>EDUCATION</u></h1>
-        <p>. University Of Lagos   Bachelor Of Finance in view    2024 <br>
-            . GOMYCODE               Front-End Development           2023-2024 <br>
-            . Senior Secondary School certificate International school University Of Lagos, Akoka, 
-               Lagos State                                                              2017-2023  
-            </p>
+</form>
+</div>
+<footer class="footer">
+    <div class="stock">
+        <ul class="list">
+            <li><a href="about.html">About</a></li>
+            <li><a href="hire.html">Contact</a></li>
+            <li><a href="#">PrivacyPolicy</a></li>
+        </ul>
+        <br>
+            <i id="tenge" class="fa-solid fa-phone">+234 8124 769757</i>
+           <p><i id="tenge" class="fa-solid fa-envelope"></i>sulaimoneyitayo@gmail.com</p> 
+           <br>
+        <p class="copyright">© 2024 EYITAYO | ALL RIGHTS RESERVED</p>
     </div>
-
-    <div class="info">
-        <h1><u>CERTIFICATES</u></h1>
-        <p>. GOMYCODE Introduction To Web Development <br>.  GOMYCODE Front-End developer React JS Certified <br><a href="Sulaimon Eyitayo.pdf">Download Certificate</a></p>
-        <img class="pic1" src="gomycode.jpg.jpg" width="200px" height="180px">
-        <img class="pic2" src="Gomycode.jpg (3).jpg" width="200px" height="180px">
-    </div>
-
-    <div class="info">
-        <h1><u>PERSONAL PROJECTS</u></h1>
-        <p>.  Built a responsive calculator app with HTML, CSS and Javascript. <br>
-            .  Created a To-Do-List app.
-            </p>
-    </div>
-    </div>
-    <footer class="footer">
-        <div class="stock">
-            <ul class="list">
-                <li><a href="about.html">About</a></li>
-                <li><a href="hire.html">Contact</a></li>
-                <li><a href="#">PrivacyPolicy</a></li>
-            </ul>
-            <br>
-                <i id="tenge" class="fa-solid fa-phone">+234 8124 769757</i>
-               <p><i id="tenge" class="fa-solid fa-envelope"></i>sulaimoneyitayo@gmail.com</p> 
-               <br>
-            <p class="copyright">© 2024 EYITAYO | ALL RIGHTS RESERVED</p>
-        </div>
-         </footer>
-
+     </footer>
 
 
 
@@ -225,7 +228,8 @@ span{
                icon.src = "Free Printable Sun Coloring Pages for Kids.jpg"
            }
         }
-   
-   </script>
+
+</script>
+
 </body>
 </html>

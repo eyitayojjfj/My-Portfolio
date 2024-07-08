@@ -3,13 +3,13 @@
     padding: o;
 }
 :root{   
-    --primary-color: #edf2fc;
-    --secondary-color: #212121;
+    --primary-color: #212121;
+    --secondary-color: #fff;
     
 }
 .dark-theme{
-    --primary-color:black;
-    --secondary-color: #fff;
+    --primary-color: #edf2fc;
+    --secondary-color: black ;
 }
 
 #icon{
@@ -29,6 +29,8 @@ body{
     background: var(--primary-color);
     font-family: sans-serif;
     position: relative;
+}
+.point{
     
 }
 
@@ -119,6 +121,41 @@ span{
     margin-right: 20px;
 }
 .social-links a:hover{
+    color: #ff4321;
+}
+.job h3{
+    font-size: 70px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    
+}
+.hero{
+     background-color: rgba(0, 0, 139, 0.54);
+}
+.footer{
+    background-color: rgba(0, 0, 139, 0.54);
+    margin-bottom: -50px;
+    padding-bottom: 10px;
+}
+.footer .stock{
+    text-align: center;
+    padding-bottom: 25px;
+    color: var(--secondary-color);
+    font-size: 12px;
+    
+}
+ .list li{
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    padding-right: 10px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 10px 10px;
+}
+.list li:hover{
     color: #ff4321;
 }
 
