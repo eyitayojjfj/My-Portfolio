@@ -103,10 +103,8 @@ span{
     color: var(--secondary-color);
 }
 .pic1{
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-left: 550px;
+   
+    
 }
 .hero{
      background-color: rgba(0, 0, 139, 0.54);
@@ -136,10 +134,28 @@ span{
     margin: 10px 10px;
     cursor: pointer;
 }
+.images{
+    display: flex;
+    justify-content: center;
+}
+.profile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 70px;
+ }
+@media (max-width:768px) {
+    .profile{
+        flex-direction: column;
+        gap:20px;
+    }
+}
+
 
 
 </style>
-<body>
+<body id="body">
     <div class="hero">
         <nav>
             <h1 class="head">EYITAYO</h1>
@@ -153,7 +169,7 @@ span{
             <img src="Free Printable Sun Coloring Pages for Kids.jpg" id="icon">
         </nav>
        </div>
-        <div>
+        <div class="profile">
         <div class="sport">
             <h1> <span>About</span> Me</h1>
         </div>
@@ -184,8 +200,10 @@ span{
     <div class="info">
         <h1><u>CERTIFICATES</u></h1>
         <p>. GOMYCODE Introduction To Web Development <br>.  GOMYCODE Front-End developer React JS Certified <br><a href="Sulaimon Eyitayo.pdf">Download Certificate</a></p>
+        <div class="images">
         <img class="pic1" src="gomycode.jpg.jpg" width="200px" height="180px">
         <img class="pic2" src="Gomycode.jpg (3).jpg" width="200px" height="180px">
+    </div>
     </div>
 
     <div class="info">
@@ -209,13 +227,13 @@ span{
             <p class="copyright">© 2024 EYITAYO | ALL RIGHTS RESERVED</p>
         </div>
          </footer>
+E
 
 
 
+    <script src="/index.js">
 
-    <script>
-
-        var icon = document.getElementById("icon");
+        /* var icon = document.getElementById("icon");
    
         icon.onclick = function(){
            document.body.classList.toggle("dark-theme")
@@ -224,7 +242,7 @@ span{
            }else{
                icon.src = "Free Printable Sun Coloring Pages for Kids.jpg"
            }
-        }
+        } */
    
    </script>
 </body>

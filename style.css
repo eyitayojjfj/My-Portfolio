@@ -28,7 +28,7 @@ body{
     width: 100%;
     background: var(--primary-color);
     font-family: sans-serif;
-    position: relative;
+    
 }
 .point{
     
@@ -90,25 +90,26 @@ span{
     border-radius: 5px;
 }
 .img-box{
-    width: 45%;
-    height: 80%;
-    position: absolute;
-    bottom: 0;
-    left: 1000px;
+    
+width: 300px;
+height: 300px;
+margin-bottom: 80px;
+    
 }
 .img-box img{
-    height: 100%;
-    position: absolute;
-    left: 505;
-    bottom: 0;
-    transform: translateX(-50%);
-    transition: bottom 1s, left 1s;
+    
+   width: 100%;
+
 }
 .img-box:hover .back-img{
     bottom: 40px;
+        
+    bottom: 0;
+    transform: translateY(50px);
+    transition: .5s ease-in-out;
 }
 .img-box:hover .front-img{
-    left: 54%;
+    
 
 }
 .social-links{
@@ -158,5 +159,19 @@ span{
 .list li:hover{
     color: #ff4321;
 }
+.profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.upper{
+    padding: 20px;
+}
 
+@media (max-width:768px) {
+    .profile{
+        flex-direction: column;
+        gap:20px;
+    }
+}

@@ -7,22 +7,24 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body>
+<body id="body">
     <header class="point">
     <div class="hero">
         <nav>
             <h1 class="head">EYITAYO</h1>
             <ul>
                 <li><a href="">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="about.html" id="about">ABOUT</a></li>
                 <!-- <li><a href="">PORTFOLIO</a></li>
                 <li><a href="">SERVICES</a></li> -->
-                <li><a href="hire.html">HIRE ME</a></li>
+                <li><a href="hire.html" id="hire">HIRE ME</a></li>
             </ul>
             <img src="Free Printable Sun Coloring Pages for Kids.jpg" id="icon">
         </nav>
     </div>
-        <div>
+
+     <div class="upper">
+        <div class="profile">
         <div class="info">
             <h1>I'm <span>Eyitayo</span> Sulaimon</h1>
             <p>This is my official portforlio website to showcase all my works related to Front-End web<br>development and UI design</p>
@@ -32,14 +34,16 @@
             <img src="tayo.jpg" class="back-img">
         </div>
         <br><br><br>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/eyitayo-sulaimon-69400b314/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href=""><i class="fa-brands fa-behance"></i></a>
-            <a href="https://github.com/eyitayojjfj"><i class="fa-brands fa-github"></i></a> 
-        </div>
-        
-       
     </div>
+    
+</div><br><br><br>
+
+<div class="social-links">
+    <a href="https://www.linkedin.com/in/eyitayo-sulaimon-69400b314/"><i class="fa-brands fa-linkedin"></i></a>
+    <a href=""><i class="fa-brands fa-behance"></i></a>
+    <a href="https://github.com/eyitayojjfj"><i class="fa-brands fa-github"></i></a> 
+</div>
+
     </header>
     <br>
     <footer class="footer">
@@ -59,9 +63,9 @@
     <br>
    
    
-<script>
+<script src="./index.js">
 
-     var icon = document.getElementById("icon");
+/*      var icon = document.getElementById("icon");
 
      icon.onclick = function(){
         document.body.classList.toggle("dark-theme")
@@ -71,7 +75,7 @@
             icon.src = "Free Printable Sun Coloring Pages for Kids.jpg"
         }
      }
-
+ */
 </script>
 
 </body>
