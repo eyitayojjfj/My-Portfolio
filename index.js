@@ -1,13 +1,34 @@
 var icon = document.getElementById("icon");
 const body = document.getElementById("body");
+function applyTheme() {
+  const theme = localStorage.getItem("theme");
+  
+  if (theme === "dark") {
+      body.classList.add("dark-theme");
+      icon.src = "3efc11be-0df3-4228-b9e5-77b4e01d97d0.jpg";
+  } else {
+      body.classList.remove("dark-theme");
+     icon.src = "Free Printable Sun Coloring Pages for Kids.jpg"
+  }
+}
+
+
+
         icon.onclick = function(){
            body.classList.toggle("dark-theme")
            if(body.classList.contains("dark-theme")){
                icon.src = "3efc11be-0df3-4228-b9e5-77b4e01d97d0.jpg";
+               localStorage.setItem("theme", "dark");
            }else{
                icon.src = "Free Printable Sun Coloring Pages for Kids.jpg"
+               localStorage.setItem("theme", "light");
            }
-}
+};
+applyTheme();
+
+
+
+
 const fullName = document.getElementById("full-name");
 const email = document.getElementById("email");
 const phoneNumber = document.getElementById("phone-number");
